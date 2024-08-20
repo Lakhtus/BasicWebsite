@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Document</title>
+    <style></style>
   </head>
   <body>
     <!-- magic -->
@@ -19,12 +21,14 @@
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
         <img
-          src="ressources/laura-jones.jpg"
+          src="ressources/lakhturuus.jpg"
           alt="profile picture"
-          width="50"
-          height="50"
+          width="auto"
+          height="100"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Anes Lakhtus</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="ressources/post-img.jpg"
@@ -91,27 +95,27 @@
 
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="ressources/related-1.jpg" height="75" width="75" />
           <a href="#">How to Learn Web Developement</a>
-          <p>By Lakhtus</p>
+          <p class="related-author">By Lakhtus</p>
         </li>
         <li>
           <img src="ressources/related-2.jpg" height="75" width="75" />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Lakhtus</p>
+          <p class="related-author">By Lakhtus</p>
         </li>
         <li>
           <img src="ressources/related-3.jpg" height="75" width="75" />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Lakhtus</p>
+          <p class="related-author">By Lakhtus</p>
         </li>
       </ul>
-
-      ul>(li>(div.content>a>img.profilePic)*2)*4
     </aside>
 
-    <footer>Copyright &copy; 2027 by The Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>
+    </footer>
   </body>
 </html>
