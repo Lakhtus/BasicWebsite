@@ -1,0 +1,38 @@
+* {
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #dfdfdf;
+  font-weight: bold;
+}
+article {
+  border: 5px solid black;
+}
+button {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  border: none;
+  height: 40px;
+  border-radius: 50px;
+  padding: 15px;
+}
+.price {
+  font-size: 30px;
+}
+.description {
+  font-weight: bold;
+}
+a {
+  color: #000;
+}
+a:visited {
+  color: #000;
+}
+.copyright {
+  text-align: right;
+  font-size: 10px;
+}
