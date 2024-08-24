@@ -19,20 +19,24 @@ h3 {
 }
 h1 {
   font-size: 26px;
-
   text-transform: uppercase;
   font-style: italic;
+}
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
 }
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
 }
 h3 {
   font-size: 30px;
   margin-bottom: 20px;
   margin-top: 40px;
 }
-
 h4 {
   font-size: 20px;
   text-transform: uppercase;
@@ -127,4 +131,22 @@ a:hover {
 }
 a:active {
   background-color: black;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-top: 5px;
+}
+h3 + p::first-line {
+  color: green;
+}
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 25px;
 }
