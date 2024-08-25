@@ -21,6 +21,10 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
+}
+nav {
+  float: right;
 }
 nav a:link {
   display: inline-block;
@@ -96,6 +100,10 @@ li:last-child {
   width: 100%;
   height: auto;
 }
+.main-header * {
+  display: inline-block;
+}
+
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
@@ -141,12 +149,28 @@ h3 + p::first-line {
 }
 h2::after {
   content: "TOP";
-  background-color: yellow;
+  background-color: rgb(255, 204, 0);
   font-size: 16px;
+  color: black;
   font-weight: bold;
   display: inline-block;
   padding: 5px 10px;
   position: absolute;
   top: 0;
   right: 25px;
+}
+body {
+  border-top: 15px solid #1098ad;
+}
+.author-img {
+  float: left;
+  height: 50px;
+  width: auto;
+  margin-bottom: 20px;
+}
+.author {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: auto;
 }
