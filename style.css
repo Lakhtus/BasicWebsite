@@ -174,3 +174,6 @@ body {
   margin-top: 15px;
   margin-bottom: auto;
 }
+.clear {
+  clear: both;
+}
