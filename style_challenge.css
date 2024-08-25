@@ -14,11 +14,29 @@ h2 {
   font-weight: bold;
   padding: 15px;
 }
-
+h2::after {
+  content: "SALE";
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  position: absolute;
+  letter-spacing: 5px;
+  top: -25px;
+  left: -50px;
+}
+.shipping {
+  color: grey;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 article {
   border: 5px solid black;
   margin: 50px auto;
   width: 800px;
+  position: relative;
 }
 button {
   color: white;
@@ -70,4 +88,33 @@ li:last-child {
 .product-img {
   height: 250px;
   width: auto;
+}
+.color {
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+.color:first-child {
+  margin-left: 20px;
+}
+.black {
+  background-color: #000;
+}
+.blue {
+  background-color: rgb(50, 50, 220);
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: rgb(242, 204, 52);
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
 }
