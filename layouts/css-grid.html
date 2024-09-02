@@ -15,6 +15,8 @@
       .el--3 {
         background-color: green;
         height: 150px;
+        align-self: end;
+        justify-self: end;
       }
       .el--4 {
         background-color: goldenrod;
@@ -27,6 +29,10 @@
       }
       .el--7 {
         background-color: yellow;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
       }
       .el--8 {
         background-color: crimson;
@@ -34,6 +40,7 @@
 
       .container--1 {
         /* STARTER */
+        display: none;
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 40px;
@@ -50,17 +57,25 @@
       }
 
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        grid: 50px;
+
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
       }
     </style>
   </head>
