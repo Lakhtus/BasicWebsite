@@ -14,6 +14,7 @@ h2 {
   background-color: #dfdfdf;
   font-weight: bold;
   padding: 15px;
+  grid-column: 1 /-1;
 }
 h2::after {
   content: "SALE";
@@ -34,11 +35,15 @@ h2::after {
   text-transform: uppercase;
   font-size: 13px;
 }
-article {
-  border: 5px solid black;
+.product {
+  border: 4px solid black;
   margin: 50px auto;
   width: 900px;
   position: relative;
+
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
 }
 button {
   color: white;
@@ -48,6 +53,7 @@ button {
   font-size: 20px;
   width: 100%;
   height: 40px;
+  grid-column: 1 / -1;
 }
 button:hover {
   background-color: white;
@@ -157,11 +163,6 @@ li:last-child {
   align-items: center;
   justify-content: space-between;
   margin-top: 20px;
-}
-
-.main-container {
-  display: flex;
-  gap: 40px;
 }
 
 .details-container {
