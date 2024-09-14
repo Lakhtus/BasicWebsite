@@ -35,91 +35,172 @@
         line-height: 1;
       }
 
-      .accordion{
-            width: 700px;
-            margin: 100px auto;
-         }
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
 
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
 
-    .item{
-      box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
-      padding: 24px;
+      .item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
 
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      column-gap: 24px;
-      row-gap: 32px;
-      align-items: center;
-    }
-    .number, .text{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
+      }
+      .number,
+      .text {
         font-size: 24px;
         font-weight: 500;
-        color: #087f5b;
-    }
-    
-   .icon{
-    width: 24px;
-    height: 24px;
-    stroke: #087f5b;
-   }
-    .hidden-box{}
+        /* color: #087f5b; */
+      }
+      .number {
+        color: #ced4da;
+      }
 
-    .hidden-box p {
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
+      .hidden-box {
+        grid-column: 2;
+        display: none;
+      }
+
+      .hidden-box p {
         line-height: 1.6;
         margin-bottom: 24px;
-    }
+      }
 
-
-    .hidden-box ul {
+      .hidden-box ul {
         color: #adb5bd;
         margin-left: 20px;
         display: flex;
         flex-direction: column;
         gap: 12px;
-    }
+      }
+      /* OPEN STATE */
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+      .open .hidden-box {
+        display: block;
+      }
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
 
-    /* .hidden-box li {
+      /* .hidden-box li {
         margin-bottom: 12px;
 
     } */
-
     </style>
   </head>
   <body>
     <div class="accordion">
-        <div class="item">
-        <p class="number">02</p>
-        <p class="text ">How long do I have to return my chair? </p>
-        <svg   
-        xmlns="http://www.w3.org/2000/svg"
-         viewBox="0 0 24 24"
+      <div class="item">
+        <p class="number">01</p>
+        <p class="text">Where are these chairs assembled ?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
           class="icon"
-           fill="currentColor">
-            <path 
+          fill="currentColor"
+        >
+          <path
             fill-rule="evenodd"
-             d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z" 
-             clip-rule="evenodd" />
-          </svg>
-          <div class="hidden-box">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                 Illo cumque deleniti recusandae rem, delectus itaque quos hic,
-                  neque sapiente consequatur laudantium ratione tempore veniam sint!
-                   Voluptas ipsum assumenda vel magni!
-            </p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    </li>
-                <li>Dicta totam officiis itaque excepturi consectetur dolorum ducimus quae 
-                        quaerat consequatur? </li>
-                <li>Id doloribus accusantium earum numquam repellendus
-                    veniam fuga, debitis distinctio assumenda.</li> 
-                
-            </ul>
-        </div> 
-          </div>
-          
+            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+            cumque deleniti recusandae rem, delectus itaque quos hic, neque
+            sapiente consequatur laudantium ratione tempore veniam sint!
+            Voluptas ipsum assumenda vel magni!
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Dicta consectetur dolorum ducimus quae quaerat consequatur?</li>
+            <li>
+              Id doloribus accusantium earum numquam repellendus veniam fuga.
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="item open">
+        <p class="number">02</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="icon"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+            cumque deleniti recusandae rem, delectus itaque quos hic, neque
+            sapiente consequatur laudantium ratione tempore veniam sint!
+            Voluptas ipsum assumenda vel magni!
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Dicta consectetur dolorum ducimus quae quaerat consequatur?</li>
+            <li>
+              Id doloribus accusantium earum numquam repellendus veniam fuga.
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="item">
+        <p class="number">03</p>
+        <p class="text">Do you ship to outside the EU?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          class="icon"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+            cumque deleniti recusandae rem, delectus itaque quos hic, neque
+            sapiente consequatur laudantium ratione tempore veniam sint!
+            Voluptas ipsum assumenda vel magni!
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Dicta consectetur dolorum ducimus quae quaerat consequatur?</li>
+            <li>
+              Id doloribus accusantium earum numquam repellendus veniam fuga.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </body>
 </html>
